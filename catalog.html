@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Каталог в наличии — Техлес</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;family=Unbounded:wght@500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-strip">Демо-версия нового сайта Техлес · цены и остатки — снимок из 1С на 17.10.2026</div>
+<div class="topbar"><div class="wrap">
+<span>р.п. Магистральный · Казачинско-Ленский район</span>
+<span class="links"><span class="accent">Работаем с организациями · НДС 22%</span><a href="tel:+73956240649">ТехлесАвто +7 (39562) 4-06-49</a><a href="mailto:tehles@tehles.com">tehles@tehles.com</a></span>
+</div></div>
+<header class="header">
+<div class="wrap main">
+<a class="logo" href="index.html" aria-label="Техлес — на главную"><img src="logo.png" alt="TEHLES" width="194" height="46"></a>
+<form class="search" id="search-form" role="search" action="catalog.html">
+<label class="sr" for="q">Поиск по товарам</label>
+<input id="q" name="q" type="search" placeholder="Название, артикул или OEM-номер">
+<button type="submit" aria-label="Найти"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+</form>
+<nav class="nav" aria-label="Основное меню">
+<a href="catalog.html" class="current" aria-current="page">Каталог</a>
+<a href="index.html#b2b">Организациям</a>
+<a href="index.html#stores">Магазины</a>
+<a class="sale" href="https://sale.tehles.com">Распродажа</a>
+</nav>
+<a class="btn-order" href="order.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6v3H9z"/><path d="M15 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h4"/></svg>Заявка · <span data-order-count>2</span></a>
+</div>
+<div class="storenav"><nav class="wrap" aria-label="Магазины">
+<a class="first" href="catalog.html?store=auto">Автозапчасти · ТехлесАвто</a>
+<a href="catalog.html?store=instr">Инструмент и техника · Инструмент плюс</a>
+<a href="catalog.html?store=spec">Спецодежда и СИЗ</a>
+<a href="catalog.html?store=dom">Хозтовары · Домовой</a>
+</nav></div>
+</header>
+<main class="wrap" id="catalog">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a> / Каталог</nav>
+<div class="cat-head">
+<div><h1 class="page-title">Товары в наличии</h1><p class="lead"><span id="count">15</span> позиций · остатки из 1С на 17.10.2026</p></div>
+<div class="cat-tools">
+<div class="seg" role="group" aria-label="Вид каталога">
+<button type="button" data-view="cards" aria-pressed="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Карточки</button>
+<button type="button" data-view="list" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Список</button>
+</div>
+<label class="sort">Сортировка <select><option>По названию</option><option>Сначала дешевле</option><option>Сначала дороже</option></select></label>
+</div>
+</div>
+<div class="cat-layout">
+<aside class="filters" aria-label="Фильтры">
+<fieldset><legend>Магазин</legend>
+<button type="button" class="fbtn" data-store="all" aria-pressed="false"><span>Все магазины</span><span class="n">0</span></button>
+<button type="button" class="fbtn" data-store="auto" aria-pressed="false"><span>ТехлесАвто</span><span class="n">0</span></button>
+<button type="button" class="fbtn" data-store="instr" aria-pressed="false"><span>Инструмент плюс</span><span class="n">0</span></button>
+<button type="button" class="fbtn" data-store="spec" aria-pressed="false"><span>Спецодежда</span><span class="n">0</span></button>
+<button type="button" class="fbtn" data-store="dom" aria-pressed="false"><span>Домовой</span><span class="n">0</span></button>
+</fieldset>
+<fieldset><legend>Техника · ТехлесАвто</legend>
+<a class="flink" href="#">IVECO</a><a class="flink" href="#">КамАЗ</a><a class="flink" href="#">FAW SHAANXI</a><a class="flink" href="#">МТЛБ · ТТ-4</a><a class="flink" href="#">Масла и жидкости</a>
+</fieldset>
+<label class="check"><input type="checkbox" id="only-stock">Только в наличии</label>
+<div class="help"><b>Не нашли позицию?</b><span>Пришлите список артикулов — проверим склад и привезём под заказ.</span><a href="order.html">Отправить список →</a></div>
+</aside>
+<div class="cat-main">
+<div class="empty" id="empty" hidden>Ничего не нашли. Снимите «Только в наличии» или пришлите артикулы — проверим склад.</div>
+<div class="grid-products" id="view-cards">
+<article class="card" data-store="auto" data-ok="1" data-text="камера тормозная передняя «iveco» 41211369 ут-00019833">
+<a class="pic" href="product.html"><img src="img-ut-00019833.jpg" alt="Камера тормозная передняя «IVECO»" loading="lazy"><span class="store">ТехлесАвто</span></a>
+<div class="body">
+<a class="name" href="product.html">Камера тормозная передняя «IVECO»</a>
+<span class="art">Арт. 41211369 · УТ-00019833</span>
+<span class="status">В наличии: 1 шт.</span>
+<div class="foot"><span class="price">10 525 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="auto" data-ok="1" data-text="фильтр топливный грубой очистки cursor «filtron» pp967/7 ут-00018110">
+<a class="pic" href="product.html"><img src="img-ut-00018110.jpg" alt="Фильтр топливный грубой очистки CURSOR «FILTRON»" loading="lazy"><span class="store">ТехлесАвто</span></a>
+<div class="body">
+<a class="name" href="product.html">Фильтр топливный грубой очистки CURSOR «FILTRON»</a>
+<span class="art">Арт. PP967/7 · УТ-00018110</span>
+<span class="status">В наличии: 5 шт.</span>
+<div class="foot"><span class="price">3 332 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="auto" data-ok="1" data-text="датчик цилиндра сцепления «iveco» 42559779 00-00002053">
+<a class="pic" href="product.html"><img src="img-00-00002053.jpg" alt="Датчик цилиндра сцепления «IVECO»" loading="lazy"><span class="store">ТехлесАвто</span></a>
+<div class="body">
+<a class="name" href="product.html">Датчик цилиндра сцепления «IVECO»</a>
+<span class="art">Арт. 42559779 · 00-00002053</span>
+<span class="status">В наличии: 1 шт.</span>
+<div class="foot"><span class="price">17 924 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="auto" data-ok="1" data-text="болт рессоры центральный «iveco» 41003813 00-00002034">
+<a class="pic" href="product.html"><img src="img-00-00002034.jpg" alt="Болт рессоры центральный «IVECO»" loading="lazy"><span class="store">ТехлесАвто</span></a>
+<div class="body">
+<a class="name" href="product.html">Болт рессоры центральный «IVECO»</a>
+<span class="art">Арт. 41003813 · 00-00002034</span>
+<span class="status">В наличии: 1 шт.</span>
+<div class="foot"><span class="price">1 785 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="instr" data-ok="1" data-text="домкрат подкатный 3 т, 150–530 мм matrix master 51040 ут-00018102">
+<a class="pic" href="product.html"><img src="img-ut-00018102.jpg" alt="Домкрат подкатный 3 т, 150–530 мм MATRIX MASTER" loading="lazy"><span class="store">Инструмент плюс</span></a>
+<div class="body">
+<a class="name" href="product.html">Домкрат подкатный 3 т, 150–530 мм MATRIX MASTER</a>
+<span class="art">Арт. 51040 · УТ-00018102</span>
+<span class="status">В наличии: 1 шт.</span>
+<div class="foot"><span class="price">10 750 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="instr" data-ok="1" data-text="домкрат бутылочный 30 т, 240–370 мм matrix master 50735 ут-00018101">
+<a class="pic" href="product.html"><img src="img-ut-00018101.jpg" alt="Домкрат бутылочный 30 т, 240–370 мм MATRIX MASTER" loading="lazy"><span class="store">Инструмент плюс</span></a>
+<div class="body">
+<a class="name" href="product.html">Домкрат бутылочный 30 т, 240–370 мм MATRIX MASTER</a>
+<span class="art">Арт. 50735 · УТ-00018101</span>
+<span class="status">В наличии: 2 шт.</span>
+<div class="foot"><span class="price">9 998 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="instr" data-ok="1" data-text="лестница алюминиевая 3×14 ступеней, 7,5 м «сибртех» 97824 ут-00018887">
+<a class="pic" href="product.html"><img src="img-ut-00018887.jpg" alt="Лестница алюминиевая 3×14 ступеней, 7,5 м «Сибртех»" loading="lazy"><span class="store">Инструмент плюс</span></a>
+<div class="body">
+<a class="name" href="product.html">Лестница алюминиевая 3×14 ступеней, 7,5 м «Сибртех»</a>
+<span class="art">Арт. 97824 · УТ-00018887</span>
+<span class="status">В наличии: 2 шт.</span>
+<div class="foot"><span class="price">24 990 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="instr" data-ok="0" data-text="набор инструментов 94 предмета stels 14118 ут-00018913">
+<a class="pic" href="product.html"><img src="img-ut-00018913.jpg" alt="Набор инструментов 94 предмета Stels" loading="lazy"><span class="store">Инструмент плюс</span></a>
+<div class="body">
+<a class="name" href="product.html">Набор инструментов 94 предмета Stels</a>
+<span class="art">Арт. 14118 · УТ-00018913</span>
+<span class="status order">Под заказ · [СРОК]</span>
+<div class="foot"><span class="price">9 995 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="spec" data-ok="1" data-text="костюм зимний «геркон» куртка/брюки, св.хаки/т.хаки кос432-579 ут-00054681">
+<a class="pic" href="product.html"><img src="img-ut-00054681.jpg" alt="Костюм зимний «ГЕРКОН» куртка/брюки, св.хаки/т.хаки" loading="lazy"><span class="store">Спецодежда</span></a>
+<div class="body">
+<a class="name" href="product.html">Костюм зимний «ГЕРКОН» куртка/брюки, св.хаки/т.хаки</a>
+<span class="art">Арт. КОС432-579 · УТ-00054681</span>
+<span class="status">В наличии: 4 шт.</span>
+<div class="foot"><span class="price">10 550 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="spec" data-ok="1" data-text="костюм «легион» куртка/полукомбинезон, т.синий/василёк кос817-002 ут-00054158">
+<a class="pic" href="product.html"><img src="img-ut-00054158.jpg" alt="Костюм «ЛЕГИОН» куртка/полукомбинезон, т.синий/василёк" loading="lazy"><span class="store">Спецодежда</span></a>
+<div class="body">
+<a class="name" href="product.html">Костюм «ЛЕГИОН» куртка/полукомбинезон, т.синий/василёк</a>
+<span class="art">Арт. КОС817-002 · УТ-00054158</span>
+<span class="status">В наличии: 8 шт.</span>
+<div class="foot"><span class="price">2 099 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="spec" data-ok="1" data-text="сапоги резиновые рыбацкие формовые мужские сап220-900 ут-00028475">
+<a class="pic" href="product.html"><img src="img-ut-00028475.jpg" alt="Сапоги резиновые рыбацкие формовые мужские" loading="lazy"><span class="store">Спецодежда</span></a>
+<div class="body">
+<a class="name" href="product.html">Сапоги резиновые рыбацкие формовые мужские</a>
+<span class="art">Арт. САП220-900 · УТ-00028475</span>
+<span class="status">В наличии: 16 пар</span>
+<div class="foot"><span class="price">3 870 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="spec" data-ok="0" data-text="плащ влагозащитный, оксфорд хаки ввз-002 пла002-ввз ут-00053308">
+<a class="pic" href="product.html"><img src="img-ut-00053308.jpg" alt="Плащ влагозащитный, оксфорд хаки ВВЗ-002" loading="lazy"><span class="store">Спецодежда</span></a>
+<div class="body">
+<a class="name" href="product.html">Плащ влагозащитный, оксфорд хаки ВВЗ-002</a>
+<span class="art">Арт. ПЛА002-ВВЗ · УТ-00053308</span>
+<span class="status order">Под заказ · [СРОК]</span>
+<div class="foot"><span class="price">1 890 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="dom" data-ok="0" data-text="пена монтажная проф 70 всесезонная 1000 мл donewell dpp10u70 ут-00023186">
+<a class="pic" href="product.html"><img src="img-ut-00023186.jpg" alt="Пена монтажная проф 70 всесезонная 1000 мл Donewell" loading="lazy"><span class="store">Домовой</span></a>
+<div class="body">
+<a class="name" href="product.html">Пена монтажная проф 70 всесезонная 1000 мл Donewell</a>
+<span class="art">Арт. DPP10U70 · УТ-00023186</span>
+<span class="status order">Под заказ · [СРОК]</span>
+<div class="foot"><span class="price">685 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="dom" data-ok="1" data-text="эмаль аэрозоль чёрная глянцевая 520 мл kudo ku-1002 00-00010493">
+<a class="pic" href="product.html"><img src="img-00-00010493.jpg" alt="Эмаль аэрозоль чёрная глянцевая 520 мл KUDO" loading="lazy"><span class="store">Домовой</span></a>
+<div class="body">
+<a class="name" href="product.html">Эмаль аэрозоль чёрная глянцевая 520 мл KUDO</a>
+<span class="art">Арт. KU-1002 · 00-00010493</span>
+<span class="status">В наличии: 19 шт.</span>
+<div class="foot"><span class="price">397 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+<article class="card" data-store="dom" data-ok="1" data-text="газ для портативных плит всесезонный 220 г «следопыт» pf-fg-220r 00-00017207">
+<a class="pic" href="product.html"><img src="img-00-00017207.jpg" alt="Газ для портативных плит всесезонный 220 г «Следопыт»" loading="lazy"><span class="store">Домовой</span></a>
+<div class="body">
+<a class="name" href="product.html">Газ для портативных плит всесезонный 220 г «Следопыт»</a>
+<span class="art">Арт. PF-FG-220R · 00-00017207</span>
+<span class="status">В наличии: 197 шт.</span>
+<div class="foot"><span class="price">145 ₽</span><button type="button" class="add">В заявку</button></div>
+</div>
+</article>
+</div>
+<div class="pricelist" id="view-list" hidden><div class="pl-table" role="table" aria-label="Прайс-лист">
+<div class="pl-row pl-head" role="row"><span role="columnheader">Фото</span><span role="columnheader">Код 1С</span><span role="columnheader">Наименование · артикул</span><span role="columnheader">Наличие</span><span role="columnheader" class="pr">Цена</span><span role="columnheader"></span></div>
+<div class="pl-group" data-group="auto" role="row"><span role="rowheader">ТехлесАвто</span></div>
+<div class="pl-row" role="row" data-store="auto" data-ok="1" data-text="камера тормозная передняя «iveco» 41211369 ут-00019833">
+<span class="thumb" role="cell"><img src="img-ut-00019833.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00019833</span>
+<span class="nm" role="cell"><a href="product.html">Камера тормозная передняя «IVECO»</a><small>41211369</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 1 шт.</span></span>
+<span class="pr" role="cell">10 525 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="auto" data-ok="1" data-text="фильтр топливный грубой очистки cursor «filtron» pp967/7 ут-00018110">
+<span class="thumb" role="cell"><img src="img-ut-00018110.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00018110</span>
+<span class="nm" role="cell"><a href="product.html">Фильтр топливный грубой очистки CURSOR «FILTRON»</a><small>PP967/7</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 5 шт.</span></span>
+<span class="pr" role="cell">3 332 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="auto" data-ok="1" data-text="датчик цилиндра сцепления «iveco» 42559779 00-00002053">
+<span class="thumb" role="cell"><img src="img-00-00002053.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">00-00002053</span>
+<span class="nm" role="cell"><a href="product.html">Датчик цилиндра сцепления «IVECO»</a><small>42559779</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 1 шт.</span></span>
+<span class="pr" role="cell">17 924 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="auto" data-ok="1" data-text="болт рессоры центральный «iveco» 41003813 00-00002034">
+<span class="thumb" role="cell"><img src="img-00-00002034.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">00-00002034</span>
+<span class="nm" role="cell"><a href="product.html">Болт рессоры центральный «IVECO»</a><small>41003813</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 1 шт.</span></span>
+<span class="pr" role="cell">1 785 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-group" data-group="instr" role="row"><span role="rowheader">Инструмент плюс</span></div>
+<div class="pl-row" role="row" data-store="instr" data-ok="1" data-text="домкрат подкатный 3 т, 150–530 мм matrix master 51040 ут-00018102">
+<span class="thumb" role="cell"><img src="img-ut-00018102.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00018102</span>
+<span class="nm" role="cell"><a href="product.html">Домкрат подкатный 3 т, 150–530 мм MATRIX MASTER</a><small>51040</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 1 шт.</span></span>
+<span class="pr" role="cell">10 750 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="instr" data-ok="1" data-text="домкрат бутылочный 30 т, 240–370 мм matrix master 50735 ут-00018101">
+<span class="thumb" role="cell"><img src="img-ut-00018101.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00018101</span>
+<span class="nm" role="cell"><a href="product.html">Домкрат бутылочный 30 т, 240–370 мм MATRIX MASTER</a><small>50735</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 2 шт.</span></span>
+<span class="pr" role="cell">9 998 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="instr" data-ok="1" data-text="лестница алюминиевая 3×14 ступеней, 7,5 м «сибртех» 97824 ут-00018887">
+<span class="thumb" role="cell"><img src="img-ut-00018887.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00018887</span>
+<span class="nm" role="cell"><a href="product.html">Лестница алюминиевая 3×14 ступеней, 7,5 м «Сибртех»</a><small>97824</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 2 шт.</span></span>
+<span class="pr" role="cell">24 990 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="instr" data-ok="0" data-text="набор инструментов 94 предмета stels 14118 ут-00018913">
+<span class="thumb" role="cell"><img src="img-ut-00018913.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00018913</span>
+<span class="nm" role="cell"><a href="product.html">Набор инструментов 94 предмета Stels</a><small>14118</small></span>
+<span class="st" role="cell"><span class="txt-order">Под заказ · [СРОК]</span></span>
+<span class="pr" role="cell">9 995 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-group" data-group="spec" role="row"><span role="rowheader">Спецодежда</span></div>
+<div class="pl-row" role="row" data-store="spec" data-ok="1" data-text="костюм зимний «геркон» куртка/брюки, св.хаки/т.хаки кос432-579 ут-00054681">
+<span class="thumb" role="cell"><img src="img-ut-00054681.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00054681</span>
+<span class="nm" role="cell"><a href="product.html">Костюм зимний «ГЕРКОН» куртка/брюки, св.хаки/т.хаки</a><small>КОС432-579</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 4 шт.</span></span>
+<span class="pr" role="cell">10 550 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="spec" data-ok="1" data-text="костюм «легион» куртка/полукомбинезон, т.синий/василёк кос817-002 ут-00054158">
+<span class="thumb" role="cell"><img src="img-ut-00054158.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00054158</span>
+<span class="nm" role="cell"><a href="product.html">Костюм «ЛЕГИОН» куртка/полукомбинезон, т.синий/василёк</a><small>КОС817-002</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 8 шт.</span></span>
+<span class="pr" role="cell">2 099 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="spec" data-ok="1" data-text="сапоги резиновые рыбацкие формовые мужские сап220-900 ут-00028475">
+<span class="thumb" role="cell"><img src="img-ut-00028475.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00028475</span>
+<span class="nm" role="cell"><a href="product.html">Сапоги резиновые рыбацкие формовые мужские</a><small>САП220-900</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 16 пар</span></span>
+<span class="pr" role="cell">3 870 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="spec" data-ok="0" data-text="плащ влагозащитный, оксфорд хаки ввз-002 пла002-ввз ут-00053308">
+<span class="thumb" role="cell"><img src="img-ut-00053308.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00053308</span>
+<span class="nm" role="cell"><a href="product.html">Плащ влагозащитный, оксфорд хаки ВВЗ-002</a><small>ПЛА002-ВВЗ</small></span>
+<span class="st" role="cell"><span class="txt-order">Под заказ · [СРОК]</span></span>
+<span class="pr" role="cell">1 890 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-group" data-group="dom" role="row"><span role="rowheader">Домовой</span></div>
+<div class="pl-row" role="row" data-store="dom" data-ok="0" data-text="пена монтажная проф 70 всесезонная 1000 мл donewell dpp10u70 ут-00023186">
+<span class="thumb" role="cell"><img src="img-ut-00023186.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">УТ-00023186</span>
+<span class="nm" role="cell"><a href="product.html">Пена монтажная проф 70 всесезонная 1000 мл Donewell</a><small>DPP10U70</small></span>
+<span class="st" role="cell"><span class="txt-order">Под заказ · [СРОК]</span></span>
+<span class="pr" role="cell">685 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="dom" data-ok="1" data-text="эмаль аэрозоль чёрная глянцевая 520 мл kudo ku-1002 00-00010493">
+<span class="thumb" role="cell"><img src="img-00-00010493.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">00-00010493</span>
+<span class="nm" role="cell"><a href="product.html">Эмаль аэрозоль чёрная глянцевая 520 мл KUDO</a><small>KU-1002</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 19 шт.</span></span>
+<span class="pr" role="cell">397 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+<div class="pl-row" role="row" data-store="dom" data-ok="1" data-text="газ для портативных плит всесезонный 220 г «следопыт» pf-fg-220r 00-00017207">
+<span class="thumb" role="cell"><img src="img-00-00017207.jpg" alt="" loading="lazy"></span>
+<span class="code" role="cell">00-00017207</span>
+<span class="nm" role="cell"><a href="product.html">Газ для портативных плит всесезонный 220 г «Следопыт»</a><small>PF-FG-220R</small></span>
+<span class="st" role="cell"><span class="txt-ok">В наличии: 197 шт.</span></span>
+<span class="pr" role="cell">145 ₽</span>
+<span class="ac" role="cell"><button type="button" class="add">В заявку</button></span>
+</div>
+</div></div>
+<nav class="pages" aria-label="Страницы"><a href="#" aria-current="page">1</a><a href="#">2</a><a href="#">3</a></nav>
+</div>
+</div>
+</main>
+<footer class="footer" id="contacts"><div class="wrap">
+<div class="col"><img src="logo.png" alt="TEHLES" width="160" height="38"><span>Снабжение организаций и магазины для жителей р.п. Магистральный</span></div>
+<div class="col"><b>ТехлесАвто · Инструмент плюс</b><span>ул. Объездная, 3а</span><a href="tel:+73956240649">+7 (39562) 4-06-49 — запчасти</a><a href="tel:+73956240581">+7 (39562) 4-05-81 — инструмент</a></div>
+<div class="col"><b>Спецодежда · Домовой</b><span>ул. Первопроходцев, 2А</span><a href="tel:+73953348426">+7 (395) 334-84-26</a></div>
+<div class="col"><b>Организациям и бухгалтерия</b><a href="mailto:tehles@tehles.com">tehles@tehles.com — заявки и счета</a><a href="mailto:buh@tehles.com">buh@tehles.com</a><a href="tel:+73956241347">+7 (39562) 4-13-47</a></div>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>
